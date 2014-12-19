@@ -76,3 +76,10 @@ cargo build
   * hello-project.exe  --- 成果物
   * deps/
   * native/
+
+## keywords
+
+`Rc`
+`Arc`
+`box`
+
