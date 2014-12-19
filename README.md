@@ -17,6 +17,7 @@ Functional programming samples for me
 ## Hello World!
 
 ### Erlang
+`main.erl`
 ~~~
 -module(main).
 -export([main/0]).
@@ -24,35 +25,62 @@ Functional programming samples for me
 main() -> io:fwrite("Hello World!\n").
 ~~~
 
+~~~
+> erl
+c(main).
+main:main().
+halt().
+~~~
+
 ### FSharp
+`Main.fs`
 ~~~
 [<EntryPoint>]
 let main argv =
   printfn "Hello World!"
   0
 ~~~
+~~~
+> fsc Main.fs
+> Main.exe
+~~~
 
 ### Haskell
+`Main.hs`
 ~~~
 module Main where
 
 main = putStrLn "Hello World!"
 ~~~
+~~~
+> ghc Main.hs
+> Main.exe
+~~~
 
 ### Rust
+`Main.rs`
 ~~~
 fn main() {
   println!("Hello World!");
 }
 ~~~
+~~~
+> rustc Main.rs
+> Main.exe
+~~~
 
 ### Scala
+`Main.scala`
 ~~~
 object Main {
   def main(args: Array[String]): Unit = {
     println("Hello World!");
   }
 }
+~~~
+~~~
+> scalac Main.scala
+> scala Main
 ~~~
 
 ## Primitives
