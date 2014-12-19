@@ -3,17 +3,6 @@ fp-fun
 
 Functional programming samples for me
 
-## installation
-
-## build tools
-| lang    | build tool | compiler   | interpreter |
-| ------- | ---------- | ---------- | ----------- |
-| Erlang  | rebar      | erlc       | erl         |
-| F#      | fake       | fsc        | fsi         |
-| Haskell | cabal      | ghc        | ghci        |
-| Rust    | cargo      | rustc      |             |
-| Scala   | sbt        | scalac/fsc | scala       |
-
 ## Hello World!
 
 ### Erlang
@@ -82,6 +71,17 @@ object Main {
 > scalac Main.scala
 > scala Main
 ~~~
+
+## Installation
+
+## Tools
+| lang    | build tool | compiler   | interpreter |
+| ------- | ---------- | ---------- | ----------- |
+| Erlang  | rebar      | erlc       | erl         |
+| F#      | fake       | fsc        | fsi         |
+| Haskell | cabal      | ghc        | ghci        |
+| Rust    | cargo      | rustc      |             |
+| Scala   | sbt        | scalac/fsc | scala       |
 
 ## Primitives
 | Erlang | FSharp          | Haskell      | Rust        | Scala   | 意味                |
