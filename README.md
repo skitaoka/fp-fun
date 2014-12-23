@@ -3,6 +3,8 @@ fp-fun
 
 Functional programming samples for me
 
+複数の言語をやると、どれがどの文法だったか混乱するので、ここにまとめようと思った。
+
 ## Hello World!
 
 ### Erlang
