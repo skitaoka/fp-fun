@@ -74,6 +74,29 @@ object Main {
 > scala Main
 ~~~
 
+## FizzBuzz
+
+### Erlang
+### FSharp
+### Haskell
+~~~
+module Main where
+
+fizzbuzz :: [String]
+fizzbuzz = map toFizzbuzz [1..]
+  where
+  toFizzbuzz n
+    | n `mod` 15 == 0 = "FizzBuzz"
+    | n `mod`  5 == 0 = "Fizz"
+    | n `mod`  3 == 0 = "Buzz"
+    | otherwise       = show n
+
+main = print $ take 100 fizzbuzz
+~~~
+
+### Rust
+### Scala
+
 ## Installation
 
 ## Tools
