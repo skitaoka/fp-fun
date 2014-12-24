@@ -112,6 +112,20 @@ main = print $ take 100 fizzbuzz
 ~~~
 
 ### Rust
+~~~
+fn main() {
+  for num in range(1i, 100i) {
+    let s =
+      if      num % 15 == 0 { "FizzBuzz".to_string() }
+      else if num %  3 == 0 { "Fizz"    .to_string() }
+      else if num %  5 == 0 { "Buzz"    .to_string() }
+      else                  {  num      .to_string() };
+
+    println!("{}", s);
+  }
+}
+~~~
+
 ### Scala
 ~~~
 object Fizzbuzz {
