@@ -77,6 +77,23 @@ object Main {
 ## FizzBuzz
 
 ### Erlang
+~~~
+-module(fizzbuzz).
+-export([main/0]).
+
+to_fizzbuzz(N) ->
+  if
+    N rem 15 == 0 -> "FizzBuzz";
+    N rem  3 == 0 -> "Fizz";
+    N rem  5 == 0 -> "Buzz";
+    true          -> integer_to_list(N)
+  end.
+
+fizzbuzz(N) -> lists:map(fun to_fizzbuzz/1, lists:seq(1, N)).
+
+main() -> io:fwrite("~p~n", [fizzbuzz(100)]).
+~~~
+
 ### FSharp
 ### Haskell
 ~~~
@@ -87,8 +104,8 @@ fizzbuzz = map toFizzbuzz [1..]
   where
   toFizzbuzz n
     | n `mod` 15 == 0 = "FizzBuzz"
-    | n `mod`  5 == 0 = "Fizz"
-    | n `mod`  3 == 0 = "Buzz"
+    | n `mod`  3 == 0 = "Fizz"
+    | n `mod`  5 == 0 = "Buzz"
     | otherwise       = show n
 
 main = print $ take 100 fizzbuzz
